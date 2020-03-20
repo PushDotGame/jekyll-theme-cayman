@@ -21,12 +21,14 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">
-        {{ page.title | default: site.title | default: site.github.repository_name }}
-      </h1>
-      <h2 class="project-tagline">
-        {{ page.description | default: site.description | default: site.github.project_tagline }}
-      </h2>
+      <a href="/">
+        <h1 class="project-name">
+          {{ page.title | default: site.title | default: site.github.repository_name }}
+        </h1>
+        <h2 class="project-tagline">
+          {{ page.description | default: site.description | default: site.github.project_tagline }}
+        </h2>
+      </a>
 
       <a href="/" class="btn">{{ site.home | default: 'Home' }}</a>
 
@@ -39,16 +41,16 @@
       {% endif %}
 
       {% if site.link0_url %}
-      <a href="{{ site.link0_url }}" target="_blank" class="btn">{{ site.link0_title | default: site.link0_url }}</a>
+        <a href="{{ site.link0_url }}" target="_blank" class="btn">{{ site.link0_title | default: site.link0_url }}</a>
       {% endif %}
       {% if site.link1_url %}
-      <a href="{{ site.link1_url }}" target="_blank" class="btn">{{ site.link1_title | default: site.link1_url }}</a>
+        <a href="{{ site.link1_url }}" target="_blank" class="btn">{{ site.link1_title | default: site.link1_url }}</a>
       {% endif %}
       {% if site.link2_url %}
-      <a href="{{ site.link2_url }}" target="_blank" class="btn">{{ site.link2_title | default: site.link2_url }}</a>
+        <a href="{{ site.link2_url }}" target="_blank" class="btn">{{ site.link2_title | default: site.link2_url }}</a>
       {% endif %}
       {% if site.link3_url %}
-      <a href="{{ site.link3_url }}" target="_blank" class="btn">{{ site.link3_title | default: site.link3_url }}</a>
+        <a href="{{ site.link3_url }}" target="_blank" class="btn">{{ site.link3_title | default: site.link3_url }}</a>
       {% endif %}
     </header>
 
