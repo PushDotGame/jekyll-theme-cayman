@@ -38,17 +38,17 @@
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
 
-      {% if site.link0_url %}
-      <a href="{{ site.link0_url }}" target="_blank" class="btn">{{ site.link0_title | default: site.link0_url }}</a>
+      {% if site.link0 %}
+        <a href="{{ site.link0.url }}" target="_blank" class="btn">{{ site.link0.title | default: site.link0.url }}</a>
       {% endif %}
-      {% if site.link1_url %}
-      <a href="{{ site.link1_url }}" target="_blank" class="btn">{{ site.link1_title | default: site.link1_url }}</a>
+      {% if site.link1 %}
+        <a href="{{ site.link1.url }}" target="_blank" class="btn">{{ site.link1.title | default: site.link1.url }}</a>
       {% endif %}
-      {% if site.link2_url %}
-      <a href="{{ site.link2_url }}" target="_blank" class="btn">{{ site.link2_title | default: site.link2_url }}</a>
+      {% if site.link2 %}
+        <a href="{{ site.link2.url }}" target="_blank" class="btn">{{ site.link2.title | default: site.link2.url }}</a>
       {% endif %}
-      {% if site.link3_url %}
-      <a href="{{ site.link3_url }}" target="_blank" class="btn">{{ site.link3_title | default: site.link3_url }}</a>
+      {% if site.link3 %}
+        <a href="{{ site.link3.url }}" target="_blank" class="btn">{{ site.link3.title | default: site.link3.url }}</a>
       {% endif %}
     </header>
 
